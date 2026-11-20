@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{2EE79067-6C13-49FA-A209-4AE00E2188F4}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\Decker.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\Decker.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\Decker.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\Decker.exe</OutputFile>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CustomBuildStep>
+      <Command>copy $(TargetPath) .\bin</Command>
+      <Outputs>.\bin\$(TargetName).exe;%(Outputs)</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\Decker.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+      <AdditionalOptions> /Og- </AdditionalOptions>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\Decker.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\Decker.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\Decker.exe</OutputFile>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CustomBuildStep>
+      <Command>copy $(TargetPath) .\bin</Command>
+      <Outputs>.\bin\$(TargetName).exe;%(Outputs)</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ActiveBar.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="AlarmBar.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Area.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="BuildDialog.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CharDataDialog.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ClockView.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Contract.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ContractDataDialog.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ContractListDialog.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="CustomButton.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DeckDataDialog.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Decker.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DeckerGraphics.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DeckerSound.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DSFile.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="EntryDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="FileAccessDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="HealthBar.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="HomeView.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Ice.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="IceDataDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ImageArray.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ImageDisplay.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="IntroDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="MapView.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="MatrixView.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="MessageView.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="MissionResultsDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="NameBar.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="NameDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="NewCharDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="NewProjectDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="NodeView.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="OptionsDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="OrderDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Program.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ProjectDataDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="RestDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Shop.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ShopItem.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="SoundEditDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="System.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="TransferDlg.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Og-   /Og- </AdditionalOptions>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Decker.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ActiveBar.h" />
+    <ClInclude Include="AlarmBar.h" />
+    <ClInclude Include="Area.h" />
+    <ClInclude Include="BuildDialog.h" />
+    <ClInclude Include="Character.h" />
+    <ClInclude Include="CharDataDialog.h" />
+    <ClInclude Include="ClockView.h" />
+    <ClInclude Include="Contract.h" />
+    <ClInclude Include="ContractDataDialog.h" />
+    <ClInclude Include="ContractListDialog.h" />
+    <ClInclude Include="CustomButton.h" />
+    <ClInclude Include="DeckDataDialog.h" />
+    <ClInclude Include="Decker.h" />
+    <ClInclude Include="DeckerGraphics.h" />
+    <ClInclude Include="DeckerSound.h" />
+    <ClInclude Include="DSFile.h" />
+    <ClInclude Include="EntryDlg.h" />
+    <ClInclude Include="FileAccessDlg.h" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="HealthBar.h" />
+    <ClInclude Include="HomeView.h" />
+    <ClInclude Include="Ice.h" />
+    <ClInclude Include="IceDataDlg.h" />
+    <ClInclude Include="ImageArray.h" />
+    <ClInclude Include="ImageDisplay.h" />
+    <ClInclude Include="IntroDlg.h" />
+    <ClInclude Include="MapView.h" />
+    <ClInclude Include="MatrixView.h" />
+    <ClInclude Include="MessageView.h" />
+    <ClInclude Include="MissionResultsDlg.h" />
+    <ClInclude Include="NameBar.h" />
+    <ClInclude Include="NameDlg.h" />
+    <ClInclude Include="NewCharDlg.h" />
+    <ClInclude Include="NewProjectDlg.h" />
+    <ClInclude Include="Node.h" />
+    <ClInclude Include="NodeView.h" />
+    <ClInclude Include="OptionsDlg.h" />
+    <ClInclude Include="OrderDlg.h" />
+    <ClInclude Include="Program.h" />
+    <ClInclude Include="ProjectDataDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RestDlg.h" />
+    <ClInclude Include="Shop.h" />
+    <ClInclude Include="ShopItem.h" />
+    <ClInclude Include="SoundEditDlg.h" />
+    <ClInclude Include="Source.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="System.h" />
+    <ClInclude Include="TransferDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="RES\analyze0.bmp" />
+    <Image Include="RES\analyze1.bmp" />
+    <Image Include="RES\analyze2.bmp" />
+    <Image Include="RES\arrow_e.bmp" />
+    <Image Include="RES\arrow_e1.bmp" />
+    <Image Include="RES\arrow_e2.bmp" />
+    <Image Include="RES\arrow_n.bmp" />
+    <Image Include="RES\arrow_n1.bmp" />
+    <Image Include="RES\arrow_n2.bmp" />
+    <Image Include="RES\arrow_s.bmp" />
+    <Image Include="RES\arrow_s1.bmp" />
+    <Image Include="RES\arrow_s2.bmp" />
+    <Image Include="RES\arrow_up.bmp" />
+    <Image Include="RES\arrow_w.bmp" />
+    <Image Include="RES\arrow_w1.bmp" />
+    <Image Include="RES\arrow_w2.bmp" />
+    <Image Include="RES\attack0.bmp" />
+    <Image Include="RES\attack1.bmp" />
+    <Image Include="RES\attack2.bmp" />
+    <Image Include="RES\backdoor0.bmp" />
+    <Image Include="RES\backdoor1.bmp" />
+    <Image Include="RES\backdoor2.bmp" />
+    <Image Include="Res\bio_cover.bmp" />
+    <Image Include="RES\bitmap1.bmp" />
+    <Image Include="RES\bmp00001.bmp" />
+    <Image Include="res\button_disabled.bmp" />
+    <Image Include="res\buy0.bmp" />
+    <Image Include="res\buy1.bmp" />
+    <Image Include="res\char0.bmp" />
+    <Image Include="res\char1.bmp" />
+    <Image Include="RES\char2.bmp" />
+    <Image Include="res\contract0.bmp" />
+    <Image Include="res\contract1.bmp" />
+    <Image Include="RES\contract2.bmp" />
+    <Image Include="res\COP.bmp" />
+    <Image Include="res\COP_3D.bmp" />
+    <Image Include="res\CPU.bmp" />
+    <Image Include="res\CPU_3D.bmp" />
+    <Image Include="RES\crash0.bmp" />
+    <Image Include="RES\crash1.bmp" />
+    <Image Include="RES\crash2.bmp" />
+    <Image Include="RES\deceive0.bmp" />
+    <Image Include="RES\deceive1.bmp" />
+    <Image Include="RES\deceive2.bmp" />
+    <Image Include="res\deck0.bmp" />
+    <Image Include="res\deck1.bmp" />
+    <Image Include="RES\deck2.bmp" />
+    <Image Include="res\Decker.ico" />
+    <Image Include="RES\disconnect.bmp" />
+    <Image Include="RES\disconnect0.bmp" />
+    <Image Include="RES\disconnect1.bmp" />
+    <Image Include="RES\disconnect2.bmp" />
+    <Image Include="RES\down.bmp" />
+    <Image Include="res\DS.bmp" />
+    <Image Include="res\DS_3D.bmp" />
+    <Image Include="RES\edit0.bmp" />
+    <Image Include="RES\edit1.bmp" />
+    <Image Include="RES\edit2.bmp" />
+    <Image Include="RES\enter_portal0.bmp" />
+    <Image Include="RES\enter_portal1.bmp" />
+    <Image Include="RES\enter_portal2.bmp" />
+    <Image Include="RES\erase0.bmp" />
+    <Image Include="RES\erase1.bmp" />
+    <Image Include="RES\erase2.bmp" />
+    <Image Include="RES\getfile0.bmp" />
+    <Image Include="RES\getfile1.bmp" />
+    <Image Include="RES\getfile2.bmp" />
+    <Image Include="RES\getmap0.bmp" />
+    <Image Include="RES\getmap1.bmp" />
+    <Image Include="RES\getmap2.bmp" />
+    <Image Include="RES\hide0.bmp" />
+    <Image Include="RES\hide1.bmp" />
+    <Image Include="RES\hide2.bmp" />
+    <Image Include="res\Home.bmp" />
+    <Image Include="Res\ice_attack.bmp" />
+    <Image Include="Res\ice_gateway.bmp" />
+    <Image Include="Res\ice_guardian.bmp" />
+    <Image Include="Res\ice_probe.bmp" />
+    <Image Include="Res\ice_tapeworm.bmp" />
+    <Image Include="RES\ice_trace.bmp" />
+    <Image Include="RES\il_char.bmp" />
+    <Image Include="RES\il_ice.bmp" />
+    <Image Include="Res\il_misc.bmp" />
+    <Image Include="RES\il_special_nodes_16.bmp" />
+    <Image Include="RES\il_special_nodes_32.bmp" />
+    <Image Include="RES\il_time.bmp" />
+    <Image Include="res\IO.bmp" />
+    <Image Include="res\IO_3D.bmp" />
+    <Image Include="RES\item_il.bmp" />
+    <Image Include="res\Junction.bmp" />
+    <Image Include="res\Junction_3D.bmp" />
+    <Image Include="RES\Junction_EW.bmp" />
+    <Image Include="RES\junction_NS.bmp" />
+    <Image Include="RES\killalarm0.bmp" />
+    <Image Include="RES\killalarm1.bmp" />
+    <Image Include="RES\killalarm2.bmp" />
+    <Image Include="RES\KillShutdown0.BMP" />
+    <Image Include="RES\KillShutdown1.BMP" />
+    <Image Include="RES\KillShutdown2.BMP" />
+    <Image Include="RES\killtrace0.bmp" />
+    <Image Include="RES\killtrace1.bmp" />
+    <Image Include="RES\killtrace2.bmp" />
+    <Image Include="RES\line_ew.bmp" />
+    <Image Include="RES\line_ns.bmp" />
+    <Image Include="RES\load0.bmp" />
+    <Image Include="RES\load1.bmp" />
+    <Image Include="RES\load2.bmp" />
+    <Image Include="RES\load3.bmp" />
+    <Image Include="res\MainRun.bmp" />
+    <Image Include="RES\map_loc.bmp" />
+    <Image Include="Res\map_zoom0.bmp" />
+    <Image Include="Res\map_zoom1.bmp" />
+    <Image Include="res\matrix0.bmp" />
+    <Image Include="res\matrix1.bmp" />
+    <Image Include="RES\msg0.bmp" />
+    <Image Include="RES\msg1.bmp" />
+    <Image Include="RES\msg2.bmp" />
+    <Image Include="RES\msg3.bmp" />
+    <Image Include="RES\node_char.bmp" />
+    <Image Include="RES\node_cop.bmp" />
+    <Image Include="Res\node_cpu.bmp" />
+    <Image Include="RES\node_ds.bmp" />
+    <Image Include="res\Node_IL_16.bmp" />
+    <Image Include="res\Node_IL_32.bmp" />
+    <Image Include="Res\Node_io.bmp" />
+    <Image Include="RES\node_jun.bmp" />
+    <Image Include="RES\node_lin.bmp" />
+    <Image Include="RES\node_portal.bmp" />
+    <Image Include="RES\node_spu.bmp" />
+    <Image Include="res\options0.bmp" />
+    <Image Include="res\options1.bmp" />
+    <Image Include="res\Portal.bmp" />
+    <Image Include="res\Portal_3D.bmp" />
+    <Image Include="res\program0.bmp" />
+    <Image Include="res\program1.bmp" />
+    <Image Include="res\rest0.bmp" />
+    <Image Include="res\rest1.bmp" />
+    <Image Include="RES\run_program0.bmp" />
+    <Image Include="RES\run_program1.bmp" />
+    <Image Include="RES\run_program2.bmp" />
+    <Image Include="RES\scan0.bmp" />
+    <Image Include="RES\scan1.bmp" />
+    <Image Include="RES\scan2.bmp" />
+    <Image Include="RES\set_def0.bmp" />
+    <Image Include="RES\set_def1.bmp" />
+    <Image Include="RES\set_def2.bmp" />
+    <Image Include="RES\set_def3.bmp" />
+    <Image Include="RES\software_il.bmp" />
+    <Image Include="res\SPU.bmp" />
+    <Image Include="res\SPU_3D.bmp" />
+    <Image Include="res\Title.bmp" />
+    <Image Include="Res\trace.bmp" />
+    <Image Include="Res\trace_cover.bmp" />
+    <Image Include="RES\unload0.bmp" />
+    <Image Include="RES\unload1.bmp" />
+    <Image Include="RES\unload2.bmp" />
+    <Image Include="RES\UP.BMP" />
+    <Image Include="RES\use_io0.bmp" />
+    <Image Include="RES\use_io1.bmp" />
+    <Image Include="RES\use_io2.bmp" />
+    <Image Include="RES\use_io3.bmp" />
+    <Image Include="RES\view_ice0.bmp" />
+    <Image Include="RES\view_ice1.bmp" />
+    <Image Include="RES\view_ice2.bmp" />
+    <Image Include="RES\wait0.bmp" />
+    <Image Include="RES\wait1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\Decker.rc2" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

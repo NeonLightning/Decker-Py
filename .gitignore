@@ -1,0 +1,23 @@
+# Visual Studio caches and generated output
+.vs/
+**/Debug/
+**/Release/
+*.suo
+*.ncb
+*.opt
+*.plg
+*.aps
+*.clw
+*.user
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+build/
+dist/
+*.egg-info/
+
+# Runtime saves
+*.json

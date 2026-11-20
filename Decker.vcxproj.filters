@@ -1,0 +1,822 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3307f901-faf6-4934-aaf8-ce47af3dddad}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{749a71e3-8e4d-4963-9a0b-aa1a3bcbdea9}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{30f947f5-b819-47f5-95aa-d864e8990739}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ActiveBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlarmBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Area.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BuildDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CharDataDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClockView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Contract.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ContractDataDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ContractListDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeckDataDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Decker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeckerGraphics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeckerSound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DSFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EntryDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileAccessDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HealthBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HomeView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IceDataDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageDisplay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IntroDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MapView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MatrixView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MissionResultsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NameBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NameDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewCharDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewProjectDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OrderDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Program.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectDataDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RestDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Shop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShopItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundEditDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="System.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TransferDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Decker.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ActiveBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AlarmBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Area.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BuildDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CharDataDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClockView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Contract.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ContractDataDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ContractListDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeckDataDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Decker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeckerGraphics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeckerSound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DSFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EntryDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileAccessDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HealthBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HomeView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IceDataDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageDisplay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IntroDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MapView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MissionResultsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NameBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NameDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewCharDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewProjectDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OrderDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Program.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectDataDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RestDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Shop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShopItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundEditDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="System.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TransferDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="RES\analyze0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\analyze1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\analyze2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\arrow_e.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\arrow_e1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\arrow_e2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\arrow_n.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\arrow_n1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\arrow_n2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\arrow_s.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\arrow_s1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\arrow_s2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\arrow_up.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\arrow_w.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\arrow_w1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\arrow_w2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\attack0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\attack1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\attack2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\backdoor0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\backdoor1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\backdoor2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\bio_cover.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\bmp00001.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\button_disabled.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\buy0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\buy1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\char0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\char1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\char2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\contract0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\contract1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\contract2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\COP.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\COP_3D.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\CPU.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\CPU_3D.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\crash0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\crash1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\crash2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\deceive0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\deceive1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\deceive2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\deck0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\deck1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\deck2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Decker.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\disconnect.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\disconnect0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\disconnect1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\disconnect2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\down.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\DS.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\DS_3D.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\edit0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\edit1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\edit2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\enter_portal0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\enter_portal1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\enter_portal2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\erase0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\erase1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\erase2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\getfile0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\getfile1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\getfile2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\getmap0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\getmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\getmap2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\hide0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\hide1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\hide2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Home.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ice_attack.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ice_gateway.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ice_guardian.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ice_probe.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\ice_tapeworm.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\ice_trace.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\il_char.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\il_ice.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\il_misc.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\il_special_nodes_16.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\il_special_nodes_32.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\il_time.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\IO.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\IO_3D.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\item_il.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Junction.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Junction_3D.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\Junction_EW.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\junction_NS.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\killalarm0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\killalarm1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\killalarm2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\KillShutdown0.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\KillShutdown1.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\KillShutdown2.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\killtrace0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\killtrace1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\killtrace2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\line_ew.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\line_ns.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\load0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\load1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\load2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\load3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\MainRun.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\map_loc.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\map_zoom0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\map_zoom1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\matrix0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\matrix1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\msg0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\msg1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\msg2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\msg3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\node_char.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\node_cop.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\node_cpu.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\node_ds.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Node_IL_16.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Node_IL_32.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\Node_io.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\node_jun.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\node_lin.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\node_portal.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\node_spu.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\options0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\options1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Portal.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Portal_3D.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\program0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\program1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\rest0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\rest1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\run_program0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\run_program1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\run_program2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\scan0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\scan1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\scan2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\set_def0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\set_def1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\set_def2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\set_def3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\software_il.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\SPU.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\SPU_3D.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Title.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\trace.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Res\trace_cover.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\unload0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\unload1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\unload2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\UP.BMP">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\use_io0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\use_io1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\use_io2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\use_io3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\view_ice0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\view_ice1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\view_ice2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\wait0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\wait1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\Decker.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

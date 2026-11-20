@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Decker", "Decker.vcxproj", "{2EE79067-6C13-49FA-A209-4AE00E2188F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EE79067-6C13-49FA-A209-4AE00E2188F4}.Debug|x86.ActiveCfg = Debug|Win32
+		{2EE79067-6C13-49FA-A209-4AE00E2188F4}.Debug|x86.Build.0 = Debug|Win32
+		{2EE79067-6C13-49FA-A209-4AE00E2188F4}.Release|x86.ActiveCfg = Release|Win32
+		{2EE79067-6C13-49FA-A209-4AE00E2188F4}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {17F1CBD4-AA4B-4B9B-8CCE-31A3E885A9E3}
+	EndGlobalSection
+EndGlobal
